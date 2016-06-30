@@ -1,0 +1,26 @@
+{
+  "name": "sealcode_task_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MieszkoWrzeszczynski/sealcode_task_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MieszkoWrzeszczynski/sealcode_task_1/issues"
+  },
+  "homepage": "https://github.com/MieszkoWrzeszczynski/sealcode_task_1#readme",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "node-sass": "^3.8.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "wingcss": "^0.1.4"
+  }
+}
