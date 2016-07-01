@@ -3,11 +3,11 @@ var ReactDOM = require('react-dom');
 
 var HelloMessage = React.createClass({
   render: function() {
-    return <div>Hello {this.props.name}</div>;
+    return <p>Hello {this.props.name}</p>;
   }
 });
 
 ReactDOM.render(
-  <HelloMessage name="Mieszko" />,
-  document.getElementById('root')
+  <HelloMessage name="Mieszko!" />,
+  document.getElementById('hello_message')
 )

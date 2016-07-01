@@ -1,0 +1,25 @@
+$header_color: #87d4c5;
+$p_color: whitesmoke;
+$back: #162935;
+
+
+body
+{
+	background-color: $back;
+}
+
+h1
+{
+	color:$header_color;
+}
+
+
+#hello_message
+{
+	p
+	{
+	color:$p_color;
+	}
+}
+
+
