@@ -4,8 +4,10 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify ./src/js/hello.js -o ./build/js/app.js -t [ babelify --presets [ es2015 react ] ] ;node-sass --include-path scss ./src/css/style.scss   build/css/style.css"
+    "js": "browserify ./src/js/hello.js -o ./build/js/app.js -t [ babelify --presets [ es2015 react ] ]  ",
+    "css": "node-sass --include-path scss ./src/css/style.scss   build/css/style.css",
+    "prebuild":"mkdirp build; mkdirp build/js; mkdirp build/css ",
+    "build": "npm run js && npm run css"
 
   },
   "repository": {
@@ -20,7 +22,9 @@
   "homepage": "https://github.com/MieszkoWrzeszczynski/sealcode_task_1#readme",
   "dependencies": {
     "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
     "browserify": "^13.0.1",
+    "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
