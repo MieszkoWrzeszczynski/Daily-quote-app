@@ -1,9 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+var React = require('react');
 var moment = require('moment');
-import Name from "./components/Name";
-import Time from "./components/Time";
-import Date from "./components/Date";
+var Name = require('./Name');
+var Time = require('./Time');
+var Date = require('./Date');
 
 
 class Controller extends React.Component {
@@ -27,5 +26,4 @@ class Controller extends React.Component {
   }
 }
 
-const app = document.getElementById('root');
-ReactDOM.render(<Controller/>, app);
+module.exports = Controller;

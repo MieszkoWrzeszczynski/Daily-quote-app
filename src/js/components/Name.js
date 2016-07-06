@@ -1,9 +1,4 @@
-import React from "react";
+var React = require('react');
 
-export default class Name extends React.Component {
-   render() {
-    return (
-      <li>{this.props.name}</li>
-    );
-  }
-}
+const Name = (props) => <li>{props.name}</li>;
+module.exports = Name;

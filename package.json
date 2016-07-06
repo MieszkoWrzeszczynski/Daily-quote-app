@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "js": "browserify ./src/js/controller.js -o ./build/js/app.js -t [ babelify --presets [ es2015 react ] ]  ",
+    "js": "browserify ./src/js/main.js -o ./build/js/app.js -t [ babelify --presets [ es2015 react ] ]  ",
     "css": "node-sass --include-path scss ./src/css/style.scss   build/css/style.css",
     "prebuild": "mkdirp build; mkdirp build/js; mkdirp build/css ",
     "build": "npm run js && npm run css"

@@ -1,9 +1,4 @@
-import React from "react";
+var React = require('react');
 
-export default class Time extends React.Component {
-  render() {
-    return (
-      <li>{this.props.time}</li>
-    );
-  }
-}
+const Time = (props) => <li>{props.time}</li>;
+module.exports = Time;

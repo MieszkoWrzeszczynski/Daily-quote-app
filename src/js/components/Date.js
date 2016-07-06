@@ -1,9 +1,4 @@
-import React from "react";
+var React = require('react');
 
-export default class Date extends React.Component {
-  render() {
-    return (
-      <li>{this.props.date}</li>
-    );
-  }
-}
+const Date = (props) => <li>{props.date}</li>;
+module.exports = Date;
