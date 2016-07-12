@@ -1,25 +1,57 @@
-$header_color: #87d4c5;
+$header_color: white;
 $p_color: whitesmoke;
 $back: #162935;
+
+.container {
+    max-width: 96%;
+    margin: 0 auto 1.5em;
+}
 
 
 body
 {
-	background-color: $back;
+	background: #FF512F; 
+	background: -webkit-linear-gradient(to left, #FF512F , #DD2476); 
+	background: linear-gradient(to left, #FF512F , #DD2476); 
+	color:$p_color;	        
 }
 
 h1
 {
 	color:$header_color;
+	font-size:6rem;
+}
+blockquote p::before, blockquote p::after {
+	content:'"';
+}
+blockquote
+{
+	color: white;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 1rem 4rem 1rem 4rem;
+    font-weight: 300;
 }
 
+#root  footer 
+{
+	margin-top:5rem;
+   	font-weight: 300;
+}
 
 #root
 {
+	font-family: 'Lato', sans-serif;
+
 	ul li
 	{
-	color:$p_color;
+	 color:$p_color;
 	}
+
+	blockquote footer
+	{
+		font-size: 2rem;
+    	font-weight: 400;
+	}	
 }
-
-

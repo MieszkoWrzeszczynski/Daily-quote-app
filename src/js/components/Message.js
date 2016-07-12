@@ -1,4 +1,4 @@
 var React = require('react');
 
-const Message = (props) => <li>{props.message}</li>;
+const Message = (props) => <span>{props.message}</span>;
 module.exports = Message;
