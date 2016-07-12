@@ -16,7 +16,7 @@ class Controller extends React.Component {
   componentWillMount() {
     this.setState({name: "Mieszko"});  
 
-    var temp_quotes = this.state.quotes;
+    var temp_quotes = [];
 
     temp_quotes.push.call(temp_quotes,
 	  	{
