@@ -7,8 +7,9 @@
     "js": "browserify ./src/js/main.js -o ./build/js/app.js -t [ babelify --presets [ es2015 react ] ]  ",
     "css": "node-sass --include-path scss ./src/css/style.scss   build/css/style.css",
     "prebuild": "mkdirp build; mkdirp build/js; mkdirp build/css ",
-    "build": "npm run js && npm run css"
-  },
+    "build": "npm run js && npm run css ",
+    "postbuild":"node ./server/server.js"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MieszkoWrzeszczynski/Daily-quote-app.git"
