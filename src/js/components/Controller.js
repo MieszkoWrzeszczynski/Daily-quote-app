@@ -8,26 +8,27 @@ class Controller extends React.Component {
 	super();
 	this.state = {
 		name: "",
-		quotes: []
+		quotes: [
+			{
+	  			quote:"Put your heart, mind, and soul into even your smallest acts. This is the secret of success.",
+	     		author:"Swami Sivananda"
+	  		}
+		]
 	};
 	this.randomQuote = this.randomQuote.bind(this);
 	this.getQuotes = this.getQuotes.bind(this);
   }
 
-
-
-  getQuotes()  {
+  getQuotes(){
+  var self = this;
 
   qwest.get('http://localhost:8080/api', {}, {
 	        dataType: 'json',
 	        cache: true
 	    })
 	    .then(function(xhr, data) {
-	    	console.log(data);
-	        this.setState({ quotes: data }); 
+	        self.setState({ quotes: data }); 
 	    });
-
-
   }
 
   randomQuote()  {
@@ -40,18 +41,15 @@ class Controller extends React.Component {
   }
 
   render() {
-
   	var time = moment().format('LT');
     var date = moment().format("MMMM D YYYY");
     var rand_quote = this.randomQuote();
-
-   // console.log(this.state.quotes);
    
     return (
     	<div>
 			<blockquote>
 				<p>
-					<Message message={rand_quote} />
+					<Message message={rand_quote.quote} />
 			    </p>
 				<footer>
 					<Message message={rand_quote.author} /> 
