@@ -1,5 +1,5 @@
 {
-  "name": "sealcode_task_1",
+  "name": "Daily-quote-app",
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
@@ -11,21 +11,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MieszkoWrzeszczynski/sealcode_task_1.git"
+    "url": "git+https://github.com/MieszkoWrzeszczynski/Daily-quote-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MieszkoWrzeszczynski/sealcode_task_1/issues"
+    "url": "https://github.com/MieszkoWrzeszczynski/Daily-quote-app/issues"
   },
-  "homepage": "https://github.com/MieszkoWrzeszczynski/sealcode_task_1#readme",
+  "homepage": "https://github.com/MieszkoWrzeszczynski/Daily-quote-app#readme",
   "dependencies": {
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
+    "body-parser": "^1.15.2",
     "browserify": "^13.0.1",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
     "mkdirp": "^0.5.1",
     "moment": "^2.14.1",
     "node-sass": "^3.8.0",
+    "qwest": "^4.4.4",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "reactify": "^1.1.1",
